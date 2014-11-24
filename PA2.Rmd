@@ -1,0 +1,13 @@
+---
+title: "Weather Events with Greatest Health and Economic Consequences"
+author: "Gerard Lopez"
+date: "Tuesday, November 25, 2014"
+output: html_document
+---
+
+#Synopis:
+
+##Data Processing
+
+## Results
+
