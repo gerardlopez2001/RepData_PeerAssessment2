@@ -58,14 +58,19 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
-<div id="synopis" class="section level1">
-<h1>Synopis:</h1>
+<div id="synopis" class="section level2">
+<h2>Synopis:</h2>
+</div>
 <div id="data-processing" class="section level2">
 <h2>Data Processing</h2>
+<pre class="r"><code>library(&quot;knitr&quot;)
+opts_chunk$set(echo=TRUE)
+cache=TRUE</code></pre>
+<pre class="r"><code># setwd(&quot;~/School/JH/05 Reproducible Research/Projects/Peer Assessment 2&quot;)
+data &lt;- read.csv(&quot;repdata-data-StormData.csv.bz2&quot;, sep=&quot;,&quot;,  strip.white = TRUE, header=TRUE)</code></pre>
 </div>
 <div id="results" class="section level2">
 <h2>Results</h2>
-</div>
 </div>
 
 

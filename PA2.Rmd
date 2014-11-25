@@ -5,9 +5,32 @@ date: "Tuesday, November 25, 2014"
 output: html_document
 ---
 
-#Synopis:
+
+##Synopis:
+
 
 ##Data Processing
+
+```{r setoptions, echo=TRUE}
+library("knitr")
+opts_chunk$set(echo=TRUE)
+cache=TRUE
+```
+
+
+```{r}
+# 
+setwd("~/School/JH/05 Reproducible Research/Projects/Peer Assessment 2")
+data <- read.csv("repdata-data-StormData.csv.bz2", sep=",",  strip.white = TRUE, header=TRUE)
+
+# returns string w/o leading or trailing whitespace
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+
+# data$EVTYPE <- trim(toupper(data$EVTYPE))
+keeps <- c("EVTYPE", "FATALITIES" ,  "INJURIES", "PROPDMG", "PROPDMGEXP",  "CROPDMG",  "CROPDMGEXP")
+smallData <- data[keeps]
+
+```
 
 ## Results
 
